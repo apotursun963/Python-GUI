@@ -103,4 +103,5 @@ botun15 = Button(w, width=5, height=2, relief="ridge", text="-", font="Times 15 
 botun15.place(x=225, y=220)
 botun16 = Button(w, width=5, height=2, relief="ridge", text="+", font="Times 15 bold", bg="gray", fg="white", border=3, command=lambda: show("+"))
 botun16.place(x=225, y=290)
+
 w.mainloop()

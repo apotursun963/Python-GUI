@@ -6,7 +6,7 @@ import datetime
 w = Tk()
 w.title("NotePad")
 w.geometry("700x500+500+100")
-icon = PhotoImage(file="C:\\Users\\90507\\OneDrive\\Masaüstü\\resimlericon\\notes.png")
+icon = PhotoImage(file="C:\\Users\\90507\\OneDrive\\Masaüstü\\Python-GUI\\images\\note.png")
 w.iconphoto(True,icon)
 
 def karanlık_tema():
@@ -126,7 +126,7 @@ dosya_menu.add_separator()
 # dosya_menu.add_command(label="       Sekmeyi Kapat    (Ctrl+W)",image=closetab_image,compound="left")
 dosya_menu.add_command(label="       Çıkış",command=w.quit,image=quit_image,compound="left")
 
-undo_image =PhotoImage(file="C:\\Users\\90507\\OneDrive\\Masaüstü\\resimlericon\\left-arrow.png")
+undo_image = PhotoImage(file="C:\\Users\\90507\\OneDrive\\Masaüstü\\resimlericon\\left-arrow.png")
 copy_image = PhotoImage(file="C:\\Users\\90507\\OneDrive\\Masaüstü\\resimlericon\\copy-two-paper-sheets-interface-symbol.png")
 paste_image = PhotoImage(file="C:\\Users\\90507\\OneDrive\\Masaüstü\\resimlericon\\paste.png")
 delete_image = PhotoImage(file="C:\\Users\\90507\\OneDrive\\Masaüstü\\resimlericon\\trash.png")
@@ -190,4 +190,5 @@ iç_yazi_cizili = Menu(yazi_menu,tearoff=0)
 yazi_menu.add_cascade(label="Yazı şekli",menu=iç_yazi_cizili)
 iç_yazi_cizili.add_radiobutton(label="Underline",command=underline)
 iç_yazi_cizili.add_radiobutton(label="Overstrike",command=Overstrike)
+
 w.mainloop()
